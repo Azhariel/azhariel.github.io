@@ -1,8 +1,22 @@
+/* design colors
+#e079ff 
+#8121f5
+#92aaf3
+#36213e
+#554971
+*/
+
 header {
-    background-color: #7c5e99;
+    display: flex;
+    justify-content: space-between;
+    background-color: #554971;
+    border-bottom: 10px solid #36213e;
+    padding: 10px 20px;
 }
 
 a {
+    display: inline-flex;
+    align-items: center;
     color: #FFF;
     font-size: 20px;
     font-family: "Fira Code";
@@ -11,17 +25,30 @@ a {
     margin-right: 30px;
 }
 
+a::before {
+    content: "";
+    background-color: #92aaf3;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
 nav {
-    
-    text-align: center;
+    text-align: right;
 }
 
 #button {
-    display: inline;
-    background-color: #F25A70;
+    display: inline-block;
+    background-color: #92aaf3;
     height: 60px;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 60px;
     box-shadow: 5px 5px 0px #000000;
+    margin-right: 0px;
+    transition: transform 100ms linear;
+}
+
+#button:hover {
+    transform: scale(1.05);
 }
