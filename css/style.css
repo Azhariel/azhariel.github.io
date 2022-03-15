@@ -1,9 +1,9 @@
 /* design colors
 #e079ff 
 #8121f5
-#92aaf3
-#36213e
+#92aaf3 -- default
 #554971
+#36213e -- shadows/black
 */
 
 header {
@@ -12,6 +12,10 @@ header {
     background-color: #554971;
     border-bottom: 10px solid #36213e;
     padding: 10px 20px;
+}
+
+nav {
+    text-align: right;
 }
 
 a {
@@ -33,22 +37,93 @@ a::before {
     margin-right: 10px;
 }
 
-nav {
-    text-align: right;
-}
-
-#button {
+.button {
     display: inline-block;
     background-color: #92aaf3;
     height: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 170px;
+    text-align: center;
+    padding: 0px 20px;
     line-height: 60px;
     box-shadow: 5px 5px 0px #000000;
     margin-right: 0px;
     transition: transform 100ms linear;
 }
 
-#button:hover {
+.button:hover {
     transform: scale(1.05);
 }
+
+banner {
+    display: inline-block;
+    flex-direction: column;
+    height: 800px;
+    width: 100vw;
+}
+
+titleBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: #554971;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 0px #36213e);
+    position: absolute;
+    width: 627px;
+    height: 184px;
+    left: 91px;
+    top: 196px;
+    z-index: 2;
+}
+
+.titleText {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px 0px #36213e;
+}
+
+h1 {
+    color: #92aaf3;
+    font-size: 40px;
+    margin-bottom: 28px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#bannerDownloadCV {
+    position: absolute;
+    left: 181px;
+    top: 418px;
+    z-index: 2;
+}
+
+#bannerContatos {
+    position: absolute;
+    left: 463px;
+    top: 418px;
+    z-index: 2;
+}
+
+#imgFundo {
+    position: absolute;
+    z-index: 0;
+    object-fit: none;
+    object-position: left;
+    width: 100vw;
+    height: 800px;
+    top: 90px;
+}
+
+#imgPixelada {
+    position: absolute;
+    display: block;
+    width: 995px;
+    height: 800px;
+    object-fit: none;
+    object-position: left;
+    top: 90px;
+    z-index: 1;
+}
+
