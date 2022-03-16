@@ -1,0 +1,18 @@
+.banner {
+    background-image: url(../../assets/banner.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 10px solid #36213e;
+}
+
+.banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+}
+
+.banner .navigation {
+    display: flex;
+    justify-content: space-around;
+}
