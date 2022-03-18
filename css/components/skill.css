@@ -12,13 +12,11 @@
     place-self: center;
 }
 
-.skill .subtitle {
+.skill .title {
     font-size: 23px;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-left: 24px;
-    align-self: center;
-    text-shadow: none;
+    margin-left: 24px;    
 }
 
 .skill .progressBar {
