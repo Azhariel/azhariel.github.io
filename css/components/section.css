@@ -1,15 +1,15 @@
-.skills {
+.section {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    height: 680px;
     background-color: #554971;
     border-bottom: 10px solid #36213e;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 
-.skills .wrapper {
+.section .wrapper {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
