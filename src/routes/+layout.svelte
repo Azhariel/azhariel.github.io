@@ -1,11 +1,20 @@
 <script lang="ts">
-	// The ordering of these imports is critical to your app working properly
-	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
-	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-	// Most of your app wide CSS should be put in this file
-	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css'
+	import '@skeletonlabs/skeleton/styles/skeleton.css'
+	import '../app.postcss'
+	import { AppShell, AppBar, type PopupSettings, popup } from '@skeletonlabs/skeleton'
+	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom'
+	import { storePopup } from '@skeletonlabs/skeleton'
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow })
+
+	const popupFeatured: PopupSettings = {
+		// Represents the type of event that opens/closed the popup
+		event: 'click',
+		// Matches the data-popup value on your popup element
+		target: 'popupFeatured',
+		// Defines which side of your trigger the popup will appear
+		placement: 'bottom'
+	}
 </script>
 
 <!-- App Shell -->
@@ -14,28 +23,35 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">Azhariel</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
+				<button class="btn btn-sm variant-ghost-surface" use:popup={popupFeatured}
+					>Curriculum</button
 				>
-					Discord
-				</a>
+
+				<div class="card p-4 shadow-xl" data-popup="popupFeatured">
+					<a
+						class="btn btn-sm variant-ghost-surface"
+						href="https://twitter.com/SkeletonUI"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Português
+					</a>
+					<a
+						class="btn btn-sm variant-ghost-surface"
+						href="https://twitter.com/SkeletonUI"
+						target="_blank"
+						rel="noreferrer"
+					>
+						English
+					</a>
+				</div>
+
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://github.com/azhariel"
 					target="_blank"
 					rel="noreferrer"
 				>
