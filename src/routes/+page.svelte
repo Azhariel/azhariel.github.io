@@ -1,6 +1,6 @@
 <div class="w-2/3 h-1/2 mx-auto mt-4">
 	<div class="bg-hero bg-cover bg-center bg-no-repeat w-full h-full" />
-	<div class="container relative bottom-24 mx-auto flex-1 justify-center text-center w-100">
+	<div class="container relative bottom-20 mx-auto flex-1 justify-center text-center w-100">
 		<h1 class="text-8xl text-primary-400 border-secondary-50 text-center">Renan Braga</h1>
 
 		<h1 class="text-4xl font-bold tracking-tight text-secondary-400 sm:text-6xl border-tertiary-50">
