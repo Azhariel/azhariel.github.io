@@ -33,7 +33,7 @@
 				<div class="card p-4 shadow-xl" data-popup="popupFeatured">
 					<a
 						class="btn btn-sm variant-ghost-surface"
-						href="https://twitter.com/SkeletonUI"
+						href="/CV Renan Z Braga PTBR.pdf"
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -41,7 +41,7 @@
 					</a>
 					<a
 						class="btn btn-sm variant-ghost-surface"
-						href="https://twitter.com/SkeletonUI"
+						href="/CV Renan Z Braga ENG.pdf"
 						target="_blank"
 						rel="noreferrer"
 					>
